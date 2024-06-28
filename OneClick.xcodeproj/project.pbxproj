@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44BE7E712C2E8CCD000E5CCC /* OneClickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E702C2E8CCD000E5CCC /* OneClickApp.swift */; };
+		44BE7E732C2E8CCD000E5CCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E722C2E8CCD000E5CCC /* ContentView.swift */; };
+		44BE7E752C2E8CCE000E5CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BE7E742C2E8CCE000E5CCC /* Assets.xcassets */; };
+		44BE7E782C2E8CCE000E5CCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BE7E772C2E8CCE000E5CCC /* Preview Assets.xcassets */; };
+		44BE7E832C2E8CCE000E5CCC /* OneClickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E822C2E8CCE000E5CCC /* OneClickTests.swift */; };
+		44BE7E8D2C2E8CCE000E5CCC /* OneClickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E8C2C2E8CCE000E5CCC /* OneClickUITests.swift */; };
+		44BE7E8F2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E8E2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44BE7E7F2C2E8CCE000E5CCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BE7E652C2E8CCD000E5CCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44BE7E6C2C2E8CCD000E5CCC;
+			remoteInfo = OneClick;
+		};
+		44BE7E892C2E8CCE000E5CCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44BE7E652C2E8CCD000E5CCC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44BE7E6C2C2E8CCD000E5CCC;
+			remoteInfo = OneClick;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44BE7E6D2C2E8CCD000E5CCC /* OneClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BE7E702C2E8CCD000E5CCC /* OneClickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClickApp.swift; sourceTree = "<group>"; };
+		44BE7E722C2E8CCD000E5CCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44BE7E742C2E8CCE000E5CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44BE7E772C2E8CCE000E5CCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44BE7E792C2E8CCE000E5CCC /* OneClick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneClick.entitlements; sourceTree = "<group>"; };
+		44BE7E7E2C2E8CCE000E5CCC /* OneClickTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneClickTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BE7E822C2E8CCE000E5CCC /* OneClickTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClickTests.swift; sourceTree = "<group>"; };
+		44BE7E882C2E8CCE000E5CCC /* OneClickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneClickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44BE7E8C2C2E8CCE000E5CCC /* OneClickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClickUITests.swift; sourceTree = "<group>"; };
+		44BE7E8E2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClickUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44BE7E6A2C2E8CCD000E5CCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BE7E7B2C2E8CCE000E5CCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BE7E852C2E8CCE000E5CCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44BE7E642C2E8CCC000E5CCC = {
+			isa = PBXGroup;
+			children = (
+				44BE7E6F2C2E8CCD000E5CCC /* OneClick */,
+				44BE7E812C2E8CCE000E5CCC /* OneClickTests */,
+				44BE7E8B2C2E8CCE000E5CCC /* OneClickUITests */,
+				44BE7E6E2C2E8CCD000E5CCC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44BE7E6E2C2E8CCD000E5CCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44BE7E6D2C2E8CCD000E5CCC /* OneClick.app */,
+				44BE7E7E2C2E8CCE000E5CCC /* OneClickTests.xctest */,
+				44BE7E882C2E8CCE000E5CCC /* OneClickUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44BE7E6F2C2E8CCD000E5CCC /* OneClick */ = {
+			isa = PBXGroup;
+			children = (
+				44BE7E702C2E8CCD000E5CCC /* OneClickApp.swift */,
+				44BE7E722C2E8CCD000E5CCC /* ContentView.swift */,
+				44BE7E742C2E8CCE000E5CCC /* Assets.xcassets */,
+				44BE7E792C2E8CCE000E5CCC /* OneClick.entitlements */,
+				44BE7E762C2E8CCE000E5CCC /* Preview Content */,
+			);
+			path = OneClick;
+			sourceTree = "<group>";
+		};
+		44BE7E762C2E8CCE000E5CCC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44BE7E772C2E8CCE000E5CCC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44BE7E812C2E8CCE000E5CCC /* OneClickTests */ = {
+			isa = PBXGroup;
+			children = (
+				44BE7E822C2E8CCE000E5CCC /* OneClickTests.swift */,
+			);
+			path = OneClickTests;
+			sourceTree = "<group>";
+		};
+		44BE7E8B2C2E8CCE000E5CCC /* OneClickUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44BE7E8C2C2E8CCE000E5CCC /* OneClickUITests.swift */,
+				44BE7E8E2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift */,
+			);
+			path = OneClickUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44BE7E6C2C2E8CCD000E5CCC /* OneClick */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BE7E922C2E8CCE000E5CCC /* Build configuration list for PBXNativeTarget "OneClick" */;
+			buildPhases = (
+				44BE7E692C2E8CCD000E5CCC /* Sources */,
+				44BE7E6A2C2E8CCD000E5CCC /* Frameworks */,
+				44BE7E6B2C2E8CCD000E5CCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneClick;
+			productName = OneClick;
+			productReference = 44BE7E6D2C2E8CCD000E5CCC /* OneClick.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44BE7E7D2C2E8CCE000E5CCC /* OneClickTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BE7E952C2E8CCE000E5CCC /* Build configuration list for PBXNativeTarget "OneClickTests" */;
+			buildPhases = (
+				44BE7E7A2C2E8CCE000E5CCC /* Sources */,
+				44BE7E7B2C2E8CCE000E5CCC /* Frameworks */,
+				44BE7E7C2C2E8CCE000E5CCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44BE7E802C2E8CCE000E5CCC /* PBXTargetDependency */,
+			);
+			name = OneClickTests;
+			productName = OneClickTests;
+			productReference = 44BE7E7E2C2E8CCE000E5CCC /* OneClickTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44BE7E872C2E8CCE000E5CCC /* OneClickUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44BE7E982C2E8CCE000E5CCC /* Build configuration list for PBXNativeTarget "OneClickUITests" */;
+			buildPhases = (
+				44BE7E842C2E8CCE000E5CCC /* Sources */,
+				44BE7E852C2E8CCE000E5CCC /* Frameworks */,
+				44BE7E862C2E8CCE000E5CCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44BE7E8A2C2E8CCE000E5CCC /* PBXTargetDependency */,
+			);
+			name = OneClickUITests;
+			productName = OneClickUITests;
+			productReference = 44BE7E882C2E8CCE000E5CCC /* OneClickUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44BE7E652C2E8CCD000E5CCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					44BE7E6C2C2E8CCD000E5CCC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					44BE7E7D2C2E8CCE000E5CCC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 44BE7E6C2C2E8CCD000E5CCC;
+					};
+					44BE7E872C2E8CCE000E5CCC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 44BE7E6C2C2E8CCD000E5CCC;
+					};
+				};
+			};
+			buildConfigurationList = 44BE7E682C2E8CCD000E5CCC /* Build configuration list for PBXProject "OneClick" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44BE7E642C2E8CCC000E5CCC;
+			productRefGroup = 44BE7E6E2C2E8CCD000E5CCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44BE7E6C2C2E8CCD000E5CCC /* OneClick */,
+				44BE7E7D2C2E8CCE000E5CCC /* OneClickTests */,
+				44BE7E872C2E8CCE000E5CCC /* OneClickUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44BE7E6B2C2E8CCD000E5CCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BE7E782C2E8CCE000E5CCC /* Preview Assets.xcassets in Resources */,
+				44BE7E752C2E8CCE000E5CCC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BE7E7C2C2E8CCE000E5CCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BE7E862C2E8CCE000E5CCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44BE7E692C2E8CCD000E5CCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BE7E732C2E8CCD000E5CCC /* ContentView.swift in Sources */,
+				44BE7E712C2E8CCD000E5CCC /* OneClickApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BE7E7A2C2E8CCE000E5CCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BE7E832C2E8CCE000E5CCC /* OneClickTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44BE7E842C2E8CCE000E5CCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44BE7E8F2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift in Sources */,
+				44BE7E8D2C2E8CCE000E5CCC /* OneClickUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44BE7E802C2E8CCE000E5CCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44BE7E6C2C2E8CCD000E5CCC /* OneClick */;
+			targetProxy = 44BE7E7F2C2E8CCE000E5CCC /* PBXContainerItemProxy */;
+		};
+		44BE7E8A2C2E8CCE000E5CCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44BE7E6C2C2E8CCD000E5CCC /* OneClick */;
+			targetProxy = 44BE7E892C2E8CCE000E5CCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44BE7E902C2E8CCE000E5CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44BE7E912C2E8CCE000E5CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		44BE7E932C2E8CCE000E5CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OneClick/OneClick.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OneClick/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = setworkspace.OneClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		44BE7E942C2E8CCE000E5CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OneClick/OneClick.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"OneClick/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = setworkspace.OneClick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		44BE7E962C2E8CCE000E5CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = setworkspace.OneClickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneClick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OneClick";
+			};
+			name = Debug;
+		};
+		44BE7E972C2E8CCE000E5CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = setworkspace.OneClickTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneClick.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/OneClick";
+			};
+			name = Release;
+		};
+		44BE7E992C2E8CCE000E5CCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = setworkspace.OneClickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = OneClick;
+			};
+			name = Debug;
+		};
+		44BE7E9A2C2E8CCE000E5CCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = setworkspace.OneClickUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = OneClick;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44BE7E682C2E8CCD000E5CCC /* Build configuration list for PBXProject "OneClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BE7E902C2E8CCE000E5CCC /* Debug */,
+				44BE7E912C2E8CCE000E5CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BE7E922C2E8CCE000E5CCC /* Build configuration list for PBXNativeTarget "OneClick" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BE7E932C2E8CCE000E5CCC /* Debug */,
+				44BE7E942C2E8CCE000E5CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BE7E952C2E8CCE000E5CCC /* Build configuration list for PBXNativeTarget "OneClickTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BE7E962C2E8CCE000E5CCC /* Debug */,
+				44BE7E972C2E8CCE000E5CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44BE7E982C2E8CCE000E5CCC /* Build configuration list for PBXNativeTarget "OneClickUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44BE7E992C2E8CCE000E5CCC /* Debug */,
+				44BE7E9A2C2E8CCE000E5CCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44BE7E652C2E8CCD000E5CCC /* Project object */;
+}
