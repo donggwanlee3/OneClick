@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		44BE7E712C2E8CCD000E5CCC /* OneClickApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E702C2E8CCD000E5CCC /* OneClickApp.swift */; };
-		44BE7E732C2E8CCD000E5CCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E722C2E8CCD000E5CCC /* ContentView.swift */; };
 		44BE7E752C2E8CCE000E5CCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BE7E742C2E8CCE000E5CCC /* Assets.xcassets */; };
 		44BE7E782C2E8CCE000E5CCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44BE7E772C2E8CCE000E5CCC /* Preview Assets.xcassets */; };
 		44BE7E832C2E8CCE000E5CCC /* OneClickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E822C2E8CCE000E5CCC /* OneClickTests.swift */; };
 		44BE7E8D2C2E8CCE000E5CCC /* OneClickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E8C2C2E8CCE000E5CCC /* OneClickUITests.swift */; };
 		44BE7E8F2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E8E2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift */; };
+		44BE7E9C2C2FD3E0000E5CCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BE7E9B2C2FD3E0000E5CCC /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		44BE7E6D2C2E8CCD000E5CCC /* OneClick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OneClick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE7E702C2E8CCD000E5CCC /* OneClickApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClickApp.swift; sourceTree = "<group>"; };
-		44BE7E722C2E8CCD000E5CCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		44BE7E742C2E8CCE000E5CCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44BE7E772C2E8CCE000E5CCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		44BE7E792C2E8CCE000E5CCC /* OneClick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OneClick.entitlements; sourceTree = "<group>"; };
@@ -45,6 +44,7 @@
 		44BE7E882C2E8CCE000E5CCC /* OneClickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OneClickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BE7E8C2C2E8CCE000E5CCC /* OneClickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClickUITests.swift; sourceTree = "<group>"; };
 		44BE7E8E2C2E8CCE000E5CCC /* OneClickUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneClickUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44BE7E9B2C2FD3E0000E5CCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				44BE7E702C2E8CCD000E5CCC /* OneClickApp.swift */,
-				44BE7E722C2E8CCD000E5CCC /* ContentView.swift */,
+				44BE7E9B2C2FD3E0000E5CCC /* AppDelegate.swift */,
 				44BE7E742C2E8CCE000E5CCC /* Assets.xcassets */,
 				44BE7E792C2E8CCE000E5CCC /* OneClick.entitlements */,
 				44BE7E762C2E8CCE000E5CCC /* Preview Content */,
@@ -259,7 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44BE7E732C2E8CCD000E5CCC /* ContentView.swift in Sources */,
+				44BE7E9C2C2FD3E0000E5CCC /* AppDelegate.swift in Sources */,
 				44BE7E712C2E8CCD000E5CCC /* OneClickApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct OneClickApp: App {
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EmptyView() // This ensures no visible window is created
         }
     }
 }
+
+
