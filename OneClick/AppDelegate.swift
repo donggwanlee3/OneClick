@@ -5,6 +5,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
     var urls: [String] = []
     var apps: [String] = []
+    var files: [String] = []
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Create the status item
@@ -21,28 +22,41 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let submenu = NSMenu()
 
         // Add URLs to the submenu
-        for urlString in urls {
-            submenu.addItem(NSMenuItem(title: urlString, action: #selector(openURL(_:)), keyEquivalent: ""))
+        for (index, urlString) in urls.enumerated() {
+            let menuItem = NSMenuItem(title: urlString, action: nil, keyEquivalent: "")
+            let deleteItem = NSMenuItem(title: "Delete", action: #selector(deleteURL(_:)), keyEquivalent: "")
+            deleteItem.tag = index
+            submenu.addItem(menuItem)
+            submenu.addItem(deleteItem)
         }
 
         // Add Apps to the submenu
-        for app in apps {
-            submenu.addItem(NSMenuItem(title: app, action: #selector(openApp(_:)), keyEquivalent: ""))
+        for (index, app) in apps.enumerated() {
+            let menuItem = NSMenuItem(title: app, action: nil, keyEquivalent: "")
+            let deleteItem = NSMenuItem(title: "Delete", action: #selector(deleteApp(_:)), keyEquivalent: "")
+            deleteItem.tag = index
+            submenu.addItem(menuItem)
+            submenu.addItem(deleteItem)
+        }
+
+        // Add Files to the submenu
+        for (index, file) in files.enumerated() {
+            let menuItem = NSMenuItem(title: file, action: nil, keyEquivalent: "")
+            let deleteItem = NSMenuItem(title: "Delete", action: #selector(deleteFile(_:)), keyEquivalent: "")
+            deleteItem.tag = index
+            submenu.addItem(menuItem)
+            submenu.addItem(deleteItem)
         }
 
         return submenu
     }
-//    @objc func openURL(_ sender: NSMenuItem) {
-//         if let url = URL(string: sender.title) {
-//             NSWorkspace.shared.open(url)
-//         }
-//     }
 
     @objc func openURL(_ sender: NSMenuItem) {
         if let url = URL(string: sender.title) {
             openInNewTab(url: url)
-     }
+        }
     }
+
     func openInNewTab(url: URL) {
         let script = """
         tell application "Safari"
@@ -69,6 +83,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let configuration = NSWorkspace.OpenConfiguration()
             NSWorkspace.shared.openApplication(at: appUrl, configuration: configuration, completionHandler: nil)
         }
+    }
+
+    @objc func openFile(_ sender: NSMenuItem) {
+        let fileUrl = URL(fileURLWithPath: sender.title)
+        NSWorkspace.shared.open(fileUrl)
     }
 
     @objc func openUrlsAndApps() {
@@ -127,14 +146,49 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
 
+    @objc func addFile() {
+        let openPanel = NSOpenPanel()
+        openPanel.message = "Select a file to add"
+        openPanel.prompt = "Add"
+        openPanel.allowedContentTypes = [UTType.content] // This allows selecting any content type
+        openPanel.allowsMultipleSelection = false
+        openPanel.canChooseDirectories = false
+        openPanel.canChooseFiles = true
+        
+        openPanel.begin { (result) in
+            if result == .OK {
+                if let url = openPanel.url {
+                    self.files.append(url.path) // Assuming 'files' is the array to store file paths
+                    // Update the menu
+                    self.updateMenu()
+                }
+            }
+        }
+    }
+
+    @objc func deleteURL(_ sender: NSMenuItem) {
+        urls.remove(at: sender.tag)
+        updateMenu()
+    }
+
+    @objc func deleteApp(_ sender: NSMenuItem) {
+        apps.remove(at: sender.tag)
+        updateMenu()
+    }
+
+    @objc func deleteFile(_ sender: NSMenuItem) {
+        files.remove(at: sender.tag)
+        updateMenu()
+    }
+
     func updateMenu() {
         let menu = NSMenu()
 
         // Add the main item to open all URLs and apps
         menu.addItem(NSMenuItem(title: "Open All URLs and Apps", action: #selector(openUrlsAndApps), keyEquivalent: "O"))
 
-        // Add the submenu for individual URLs and apps
-        let openSubmenuItem = NSMenuItem(title: "Open Individual URLs and Apps", action: nil, keyEquivalent: "")
+        // Add the submenu for individual URLs, apps, and files
+        let openSubmenuItem = NSMenuItem(title: "Delete Individual URLs, Apps, and Files", action: nil, keyEquivalent: "")
         menu.addItem(openSubmenuItem)
         menu.setSubmenu(createOpenSubmenu(), for: openSubmenuItem)
 
@@ -142,6 +196,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Add URL", action: #selector(addURL), keyEquivalent: "U"))
         menu.addItem(NSMenuItem(title: "Add App", action: #selector(addApp), keyEquivalent: "A"))
+        menu.addItem(NSMenuItem(title: "Add File", action: #selector(addFile), keyEquivalent: "F"))
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(title: "Quit", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "Q"))
 
