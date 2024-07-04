@@ -12,4 +12,4 @@ OneClickApp is a macOS menu bar app that allows you to manage and open your most
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/OneClickApp.git
+   git clone https://github.com/donggwanlee3/OneClickApp.git
