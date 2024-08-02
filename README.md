@@ -1,6 +1,6 @@
 # OneClickApp
 
-OneClickApp is a macOS menu bar app that allows you to manage and open your most frequently used URLs, applications, and files with a single click.
+OneClickApp is a macOS menu bar app that allows you to set up workspace in one click. It manages and opens your most frequently used URLs, applications, and files with a single click.
 
 ## Features
 
