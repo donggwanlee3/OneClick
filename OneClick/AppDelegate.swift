@@ -135,6 +135,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         openPanel.canChooseDirectories = false
         openPanel.canChooseFiles = true
         
+        // Set the default directory to the Applications folder
+        openPanel.directoryURL = URL(fileURLWithPath: "/Applications")
+        
         openPanel.begin { (result) in
             if result == .OK {
                 if let url = openPanel.url {
@@ -145,6 +148,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             }
         }
     }
+
 
     @objc func addFile() {
         let openPanel = NSOpenPanel()
